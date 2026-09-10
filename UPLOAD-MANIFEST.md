@@ -28,8 +28,20 @@ JS, PHP endpoint and Apps Script integration. Built 2026-09-08. Not deployed.
 | `images/lp-label-materials-920.jpg` / `.webp` | Core block product photo 2x (920×518) |
 | `images/lp-security-600.jpg` / `.webp` | Security block photo 1x (600×400) |
 | `images/lp-security-1200.jpg` / `.webp` | Security block photo 2x (1200×800) |
+| `images/lp-app-pharma-400.jpg` / `.webp` | Gallery photo 1x (400×267) |
+| `images/lp-app-pharma-800.jpg` / `.webp` | Gallery photo 2x (800×534) |
+| `images/lp-app-fmcg-400.jpg` / `.webp` | Gallery photo 1x (400×267) |
+| `images/lp-app-fmcg-800.jpg` / `.webp` | Gallery photo 2x (800×534) |
+| `images/lp-app-logistics-400.jpg` / `.webp` | Gallery photo 1x (400×267) |
+| `images/lp-app-logistics-800.jpg` / `.webp` | Gallery photo 2x (800×534) |
+| `images/lp-app-agro-chemicals-400.jpg` / `.webp` | Gallery photo 1x (400×267) |
+| `images/lp-app-agro-chemicals-800.jpg` / `.webp` | Gallery photo 2x (800×534) |
+| `images/lp-app-building-materials-400.jpg` / `.webp` | Gallery photo 1x (400×267) |
+| `images/lp-app-building-materials-800.jpg` / `.webp` | Gallery photo 2x (800×534) |
+| `images/lp-app-lubricants-automotive-400.jpg` / `.webp` | Gallery photo 1x (400×267) |
+| `images/lp-app-lubricants-automotive-800.jpg` / `.webp` | Gallery photo 2x (800×534) |
 
-Total: 27 files. Keep the folder structure exactly as above — every path in
+Total: 51 files. Keep the folder structure exactly as above — every path in
 the HTML, CSS and JS is relative to `/self_adhesive_labels/`.
 
 **Do NOT upload:** `_source/` (Vercel preview copy) or this manifest.
@@ -86,24 +98,16 @@ Orders Welcome, Made in India, Fast Turnaround) are unchanged.
 3. Append `?gclid=test&utm_source=google&utm_campaign=sal-test` to the URL,
    submit, and confirm the campaign columns populate.
 
-## 4. Photography still to come (placeholders in place)
+## 4. Photography
 
-The core block product photo (native 16:9, 460×259 / 920×518) and the security
-block photo (native 3:2, 600×400 / 1200×800, cover-cropped by the CSS box) are in
-place, added 2026-09-10; originals in `_source/photos/`.
-The remaining slots ship with neutral `.lp-ph` placeholder tiles. Each slot has the
-final `<picture>` markup commented in beside it, with the file names below.
-Add the files to `images/`, delete the placeholder `<div>`, uncomment the
-`<picture>` and re-upload `index.html`.
+All product photography is in place (added 2026-09-10): core block figure
+(native 16:9, 460×259 / 920×518), security block (native 3:2, 600×400 / 1200×800,
+cover-cropped by the CSS box) and the six gallery tiles (400×267 / 800×534).
+Originals are in `_source/photos/`. Only the optional hero background below remains;
+it is wired through the CSS, not a placeholder tile.
 
 | Slot | Files (JPG + WebP each) | Size |
 |---|---|---|
-| Gallery: Pharmaceutical | `lp-app-pharma-400`, `-800` | 400×267, 800×534 |
-| Gallery: FMCG | `lp-app-fmcg-400`, `-800` | 400×267, 800×534 |
-| Gallery: Logistics & Warehousing | `lp-app-logistics-400`, `-800` | 400×267, 800×534 |
-| Gallery: Agro & Chemicals | `lp-app-agro-chemicals-400`, `-800` | 400×267, 800×534 |
-| Gallery: Lubricants & Automotive | `lp-app-lubricants-automotive-400`, `-800` | 400×267, 800×534 |
-| Gallery: Building Materials | `lp-app-building-materials-400`, `-800` | 400×267, 800×534 |
 | Hero background (optional) | `lp-hero-labels-1600.jpg` via `.lp-hero__bg` in the CSS | ≤200 KB |
 
 ## 5. Vercel preview copy
