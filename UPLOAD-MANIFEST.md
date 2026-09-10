@@ -26,8 +26,8 @@ JS, PHP endpoint and Apps Script integration. Built 2026-09-08. Not deployed.
 | `images/lp-holoflex-logo-footer-160.jpg` / `.webp` | Footer logo 2x |
 | `images/lp-label-materials-460.jpg` / `.webp` | Core block product photo 1x (460×259) |
 | `images/lp-label-materials-920.jpg` / `.webp` | Core block product photo 2x (920×518) |
-| `images/lp-security-600.jpg` / `.webp` | Security block photo 1x (600×400) |
-| `images/lp-security-1200.jpg` / `.webp` | Security block photo 2x (1200×800) |
+| `images/lp-security-600.jpg` / `.webp` | Security block photo 1x (600×450) |
+| `images/lp-security-1200.jpg` / `.webp` | Security block photo 2x (1200×900) |
 | `images/lp-app-pharma-400.jpg` / `.webp` | Gallery photo 1x (400×267) |
 | `images/lp-app-pharma-800.jpg` / `.webp` | Gallery photo 2x (800×534) |
 | `images/lp-app-fmcg-400.jpg` / `.webp` | Gallery photo 1x (400×267) |
@@ -101,7 +101,7 @@ Orders Welcome, Made in India, Fast Turnaround) are unchanged.
 ## 4. Photography
 
 All product photography is in place (added 2026-09-10): core block figure
-(native 16:9, 460×259 / 920×518), security block (native 3:2, 600×400 / 1200×800,
+(native 16:9, 460×259 / 920×518), security block (native 4:3, 600×450 / 1200×900,
 cover-cropped by the CSS box) and the six gallery tiles (400×267 / 800×534).
 Originals are in `_source/photos/`. Only the optional hero background below remains;
 it is wired through the CSS, not a placeholder tile.
