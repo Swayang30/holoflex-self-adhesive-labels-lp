@@ -24,8 +24,10 @@ JS, PHP endpoint and Apps Script integration. Built 2026-09-08. Not deployed.
 | `images/lp-holoflex-logo-128.png` / `.webp` | Header logo 2x |
 | `images/lp-holoflex-logo-footer-80.jpg` / `.webp` | Footer logo 1x |
 | `images/lp-holoflex-logo-footer-160.jpg` / `.webp` | Footer logo 2x |
+| `images/lp-label-materials-460.jpg` / `.webp` | Core block product photo 1x (460×259) |
+| `images/lp-label-materials-920.jpg` / `.webp` | Core block product photo 2x (920×518) |
 
-Total: 19 files. Keep the folder structure exactly as above — every path in
+Total: 23 files. Keep the folder structure exactly as above — every path in
 the HTML, CSS and JS is relative to `/self_adhesive_labels/`.
 
 **Do NOT upload:** `_source/` (Vercel preview copy) or this manifest.
@@ -84,14 +86,15 @@ Orders Welcome, Made in India, Fast Turnaround) are unchanged.
 
 ## 4. Photography still to come (placeholders in place)
 
-The page ships with neutral `.lp-ph` placeholder tiles. Each slot has the
+The core block product photo is in place (added 2026-09-10, kept at the
+photo's native 16:9, 460×259 / 920×518; original in `_source/photos/2nd.jpeg`).
+The remaining slots ship with neutral `.lp-ph` placeholder tiles. Each slot has the
 final `<picture>` markup commented in beside it, with the file names below.
 Add the files to `images/`, delete the placeholder `<div>`, uncomment the
 `<picture>` and re-upload `index.html`.
 
 | Slot | Files (JPG + WebP each) | Size |
 |---|---|---|
-| Core block product figure | `lp-label-materials-460`, `-920` | 460×287, 920×574 |
 | Security block | `lp-security-600`, `-1200` | 600×450, 1200×900 |
 | Gallery: Pharmaceutical | `lp-app-pharma-400`, `-800` | 400×267, 800×534 |
 | Gallery: FMCG | `lp-app-fmcg-400`, `-800` | 400×267, 800×534 |
